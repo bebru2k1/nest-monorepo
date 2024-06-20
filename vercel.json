@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "/apps/goodshare/src/main.ts",
+      "src": "/apps/project/src/main.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/apps/goodshare/src/main.ts",
+      "dest": "/apps/project/src/main.ts",
       "methods": ["GET", "POST", "PUT", "DELETE"]
     }
   ]
